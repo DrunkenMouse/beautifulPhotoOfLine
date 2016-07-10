@@ -15,6 +15,19 @@
 		16230E5E1D30D457003AA453 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 16230E5C1D30D457003AA453 /* LaunchScreen.storyboard */; };
 		16230E691D30D457003AA453 /* ___Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 16230E681D30D457003AA453 /* ___Tests.m */; };
 		16230E741D30D457003AA453 /* ___UITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 16230E731D30D457003AA453 /* ___UITests.m */; };
+		16230E901D30D488003AA453 /* Charts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 16230E891D30D47E003AA453 /* Charts.framework */; };
+		16230E911D30D488003AA453 /* Charts.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 16230E891D30D47E003AA453 /* Charts.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		16230E991D30D4B0003AA453 /* bridge.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16230E981D30D4B0003AA453 /* bridge.swift */; };
+		16E176B61D30D86900DAE5FB /* MASCompositeConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = 16E1769E1D30D86900DAE5FB /* MASCompositeConstraint.m */; };
+		16E176B71D30D86900DAE5FB /* MASConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = 16E176A11D30D86900DAE5FB /* MASConstraint.m */; };
+		16E176B81D30D86900DAE5FB /* MASConstraintMaker.m in Sources */ = {isa = PBXBuildFile; fileRef = 16E176A31D30D86900DAE5FB /* MASConstraintMaker.m */; };
+		16E176B91D30D86900DAE5FB /* MASLayoutConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = 16E176A51D30D86900DAE5FB /* MASLayoutConstraint.m */; };
+		16E176BA1D30D86900DAE5FB /* MASViewAttribute.m in Sources */ = {isa = PBXBuildFile; fileRef = 16E176A91D30D86900DAE5FB /* MASViewAttribute.m */; };
+		16E176BB1D30D86900DAE5FB /* MASViewConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = 16E176AB1D30D86900DAE5FB /* MASViewConstraint.m */; };
+		16E176BC1D30D86900DAE5FB /* NSArray+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 16E176AD1D30D86900DAE5FB /* NSArray+MASAdditions.m */; };
+		16E176BD1D30D86900DAE5FB /* NSLayoutConstraint+MASDebugAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 16E176B01D30D86900DAE5FB /* NSLayoutConstraint+MASDebugAdditions.m */; };
+		16E176BE1D30D86900DAE5FB /* View+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 16E176B21D30D86900DAE5FB /* View+MASAdditions.m */; };
+		16E176BF1D30D86900DAE5FB /* ViewController+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 16E176B51D30D86900DAE5FB /* ViewController+MASAdditions.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,7 +45,56 @@
 			remoteGlobalIDString = 16230E4A1D30D456003AA453;
 			remoteInfo = "折线图";
 		};
+		16230E881D30D47E003AA453 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 16230E811D30D47E003AA453 /* Charts.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 5BA8EC401A9D14DC00CE82E1;
+			remoteInfo = "Charts-iOS";
+		};
+		16230E8A1D30D47E003AA453 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 16230E811D30D47E003AA453 /* Charts.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = A52C5C371BAC5CA400594CDD;
+			remoteInfo = "Charts-TV";
+		};
+		16230E8C1D30D47E003AA453 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 16230E811D30D47E003AA453 /* Charts.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 65B3F5BF1C7370BE000983D0;
+			remoteInfo = "Charts-OSX";
+		};
+		16230E8E1D30D47E003AA453 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 16230E811D30D47E003AA453 /* Charts.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 06AEE7A21BDC3F8B009875AE;
+			remoteInfo = ChartsTests;
+		};
+		16230E921D30D488003AA453 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 16230E811D30D47E003AA453 /* Charts.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 5BA8EC3F1A9D14DC00CE82E1;
+			remoteInfo = "Charts-iOS";
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		16230E941D30D488003AA453 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				16230E911D30D488003AA453 /* Charts.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		16230E4B1D30D456003AA453 /* 折线图.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "折线图.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -51,6 +113,34 @@
 		16230E6F1D30D457003AA453 /* 折线图UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "折线图UITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		16230E731D30D457003AA453 /* ___UITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "___UITests.m"; sourceTree = "<group>"; };
 		16230E751D30D457003AA453 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		16230E811D30D47E003AA453 /* Charts.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Charts.xcodeproj; path = Charts/Charts.xcodeproj; sourceTree = SOURCE_ROOT; };
+		16230E971D30D4B0003AA453 /* 折线图-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "折线图-Bridging-Header.h"; sourceTree = "<group>"; };
+		16230E981D30D4B0003AA453 /* bridge.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = bridge.swift; sourceTree = "<group>"; };
+		16E1769D1D30D86900DAE5FB /* MASCompositeConstraint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASCompositeConstraint.h; sourceTree = "<group>"; };
+		16E1769E1D30D86900DAE5FB /* MASCompositeConstraint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MASCompositeConstraint.m; sourceTree = "<group>"; };
+		16E1769F1D30D86900DAE5FB /* MASConstraint+Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MASConstraint+Private.h"; sourceTree = "<group>"; };
+		16E176A01D30D86900DAE5FB /* MASConstraint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASConstraint.h; sourceTree = "<group>"; };
+		16E176A11D30D86900DAE5FB /* MASConstraint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MASConstraint.m; sourceTree = "<group>"; };
+		16E176A21D30D86900DAE5FB /* MASConstraintMaker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASConstraintMaker.h; sourceTree = "<group>"; };
+		16E176A31D30D86900DAE5FB /* MASConstraintMaker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MASConstraintMaker.m; sourceTree = "<group>"; };
+		16E176A41D30D86900DAE5FB /* MASLayoutConstraint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASLayoutConstraint.h; sourceTree = "<group>"; };
+		16E176A51D30D86900DAE5FB /* MASLayoutConstraint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MASLayoutConstraint.m; sourceTree = "<group>"; };
+		16E176A61D30D86900DAE5FB /* Masonry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Masonry.h; sourceTree = "<group>"; };
+		16E176A71D30D86900DAE5FB /* MASUtilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASUtilities.h; sourceTree = "<group>"; };
+		16E176A81D30D86900DAE5FB /* MASViewAttribute.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASViewAttribute.h; sourceTree = "<group>"; };
+		16E176A91D30D86900DAE5FB /* MASViewAttribute.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MASViewAttribute.m; sourceTree = "<group>"; };
+		16E176AA1D30D86900DAE5FB /* MASViewConstraint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASViewConstraint.h; sourceTree = "<group>"; };
+		16E176AB1D30D86900DAE5FB /* MASViewConstraint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MASViewConstraint.m; sourceTree = "<group>"; };
+		16E176AC1D30D86900DAE5FB /* NSArray+MASAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+MASAdditions.h"; sourceTree = "<group>"; };
+		16E176AD1D30D86900DAE5FB /* NSArray+MASAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+MASAdditions.m"; sourceTree = "<group>"; };
+		16E176AE1D30D86900DAE5FB /* NSArray+MASShorthandAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+MASShorthandAdditions.h"; sourceTree = "<group>"; };
+		16E176AF1D30D86900DAE5FB /* NSLayoutConstraint+MASDebugAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSLayoutConstraint+MASDebugAdditions.h"; sourceTree = "<group>"; };
+		16E176B01D30D86900DAE5FB /* NSLayoutConstraint+MASDebugAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSLayoutConstraint+MASDebugAdditions.m"; sourceTree = "<group>"; };
+		16E176B11D30D86900DAE5FB /* View+MASAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "View+MASAdditions.h"; sourceTree = "<group>"; };
+		16E176B21D30D86900DAE5FB /* View+MASAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "View+MASAdditions.m"; sourceTree = "<group>"; };
+		16E176B31D30D86900DAE5FB /* View+MASShorthandAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "View+MASShorthandAdditions.h"; sourceTree = "<group>"; };
+		16E176B41D30D86900DAE5FB /* ViewController+MASAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ViewController+MASAdditions.h"; sourceTree = "<group>"; };
+		16E176B51D30D86900DAE5FB /* ViewController+MASAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "ViewController+MASAdditions.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +148,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				16230E901D30D488003AA453 /* Charts.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -101,15 +192,19 @@
 		16230E4D1D30D457003AA453 /* 折线图 */ = {
 			isa = PBXGroup;
 			children = (
+				16E1769C1D30D86900DAE5FB /* Masonry */,
 				16230E511D30D457003AA453 /* AppDelegate.h */,
 				16230E521D30D457003AA453 /* AppDelegate.m */,
 				16230E541D30D457003AA453 /* ViewController.h */,
 				16230E551D30D457003AA453 /* ViewController.m */,
+				16230E811D30D47E003AA453 /* Charts.xcodeproj */,
 				16230E571D30D457003AA453 /* Main.storyboard */,
 				16230E5A1D30D457003AA453 /* Assets.xcassets */,
 				16230E5C1D30D457003AA453 /* LaunchScreen.storyboard */,
 				16230E5F1D30D457003AA453 /* Info.plist */,
 				16230E4E1D30D457003AA453 /* Supporting Files */,
+				16230E981D30D4B0003AA453 /* bridge.swift */,
+				16230E971D30D4B0003AA453 /* 折线图-Bridging-Header.h */,
 			);
 			path = "折线图";
 			sourceTree = "<group>";
@@ -140,6 +235,49 @@
 			path = "折线图UITests";
 			sourceTree = "<group>";
 		};
+		16230E821D30D47E003AA453 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				16230E891D30D47E003AA453 /* Charts.framework */,
+				16230E8B1D30D47E003AA453 /* Charts.framework */,
+				16230E8D1D30D47E003AA453 /* Charts.framework */,
+				16230E8F1D30D47E003AA453 /* ChartsTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		16E1769C1D30D86900DAE5FB /* Masonry */ = {
+			isa = PBXGroup;
+			children = (
+				16E1769D1D30D86900DAE5FB /* MASCompositeConstraint.h */,
+				16E1769E1D30D86900DAE5FB /* MASCompositeConstraint.m */,
+				16E1769F1D30D86900DAE5FB /* MASConstraint+Private.h */,
+				16E176A01D30D86900DAE5FB /* MASConstraint.h */,
+				16E176A11D30D86900DAE5FB /* MASConstraint.m */,
+				16E176A21D30D86900DAE5FB /* MASConstraintMaker.h */,
+				16E176A31D30D86900DAE5FB /* MASConstraintMaker.m */,
+				16E176A41D30D86900DAE5FB /* MASLayoutConstraint.h */,
+				16E176A51D30D86900DAE5FB /* MASLayoutConstraint.m */,
+				16E176A61D30D86900DAE5FB /* Masonry.h */,
+				16E176A71D30D86900DAE5FB /* MASUtilities.h */,
+				16E176A81D30D86900DAE5FB /* MASViewAttribute.h */,
+				16E176A91D30D86900DAE5FB /* MASViewAttribute.m */,
+				16E176AA1D30D86900DAE5FB /* MASViewConstraint.h */,
+				16E176AB1D30D86900DAE5FB /* MASViewConstraint.m */,
+				16E176AC1D30D86900DAE5FB /* NSArray+MASAdditions.h */,
+				16E176AD1D30D86900DAE5FB /* NSArray+MASAdditions.m */,
+				16E176AE1D30D86900DAE5FB /* NSArray+MASShorthandAdditions.h */,
+				16E176AF1D30D86900DAE5FB /* NSLayoutConstraint+MASDebugAdditions.h */,
+				16E176B01D30D86900DAE5FB /* NSLayoutConstraint+MASDebugAdditions.m */,
+				16E176B11D30D86900DAE5FB /* View+MASAdditions.h */,
+				16E176B21D30D86900DAE5FB /* View+MASAdditions.m */,
+				16E176B31D30D86900DAE5FB /* View+MASShorthandAdditions.h */,
+				16E176B41D30D86900DAE5FB /* ViewController+MASAdditions.h */,
+				16E176B51D30D86900DAE5FB /* ViewController+MASAdditions.m */,
+			);
+			path = Masonry;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -150,10 +288,12 @@
 				16230E471D30D456003AA453 /* Sources */,
 				16230E481D30D456003AA453 /* Frameworks */,
 				16230E491D30D456003AA453 /* Resources */,
+				16230E941D30D488003AA453 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				16230E931D30D488003AA453 /* PBXTargetDependency */,
 			);
 			name = "折线图";
 			productName = "折线图";
@@ -232,6 +372,12 @@
 			mainGroup = 16230E421D30D456003AA453;
 			productRefGroup = 16230E4C1D30D456003AA453 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 16230E821D30D47E003AA453 /* Products */;
+					ProjectRef = 16230E811D30D47E003AA453 /* Charts.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				16230E4A1D30D456003AA453 /* 折线图 */,
@@ -240,6 +386,37 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		16230E891D30D47E003AA453 /* Charts.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Charts.framework;
+			remoteRef = 16230E881D30D47E003AA453 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		16230E8B1D30D47E003AA453 /* Charts.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Charts.framework;
+			remoteRef = 16230E8A1D30D47E003AA453 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		16230E8D1D30D47E003AA453 /* Charts.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Charts.framework;
+			remoteRef = 16230E8C1D30D47E003AA453 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		16230E8F1D30D47E003AA453 /* ChartsTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = ChartsTests.xctest;
+			remoteRef = 16230E8E1D30D47E003AA453 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		16230E491D30D456003AA453 /* Resources */ = {
@@ -273,9 +450,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				16E176B81D30D86900DAE5FB /* MASConstraintMaker.m in Sources */,
+				16230E991D30D4B0003AA453 /* bridge.swift in Sources */,
 				16230E561D30D457003AA453 /* ViewController.m in Sources */,
+				16E176B71D30D86900DAE5FB /* MASConstraint.m in Sources */,
+				16E176BF1D30D86900DAE5FB /* ViewController+MASAdditions.m in Sources */,
+				16E176B91D30D86900DAE5FB /* MASLayoutConstraint.m in Sources */,
+				16E176BC1D30D86900DAE5FB /* NSArray+MASAdditions.m in Sources */,
+				16E176BB1D30D86900DAE5FB /* MASViewConstraint.m in Sources */,
+				16E176BA1D30D86900DAE5FB /* MASViewAttribute.m in Sources */,
+				16E176BE1D30D86900DAE5FB /* View+MASAdditions.m in Sources */,
 				16230E531D30D457003AA453 /* AppDelegate.m in Sources */,
 				16230E501D30D457003AA453 /* main.m in Sources */,
+				16E176B61D30D86900DAE5FB /* MASCompositeConstraint.m in Sources */,
+				16E176BD1D30D86900DAE5FB /* NSLayoutConstraint+MASDebugAdditions.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -307,6 +495,11 @@
 			isa = PBXTargetDependency;
 			target = 16230E4A1D30D456003AA453 /* 折线图 */;
 			targetProxy = 16230E701D30D457003AA453 /* PBXContainerItemProxy */;
+		};
+		16230E931D30D488003AA453 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Charts-iOS";
+			targetProxy = 16230E921D30D488003AA453 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -418,10 +611,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				INFOPLIST_FILE = "折线图/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.aodong.---";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "折线图/折线图-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
@@ -429,10 +626,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				INFOPLIST_FILE = "折线图/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.aodong.---";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "折线图/折线图-Bridging-Header.h";
 			};
 			name = Release;
 		};
@@ -501,6 +701,7 @@
 				16230E7A1D30D457003AA453 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		16230E7B1D30D457003AA453 /* Build configuration list for PBXNativeTarget "折线图Tests" */ = {
 			isa = XCConfigurationList;
@@ -509,6 +710,7 @@
 				16230E7D1D30D457003AA453 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		16230E7E1D30D457003AA453 /* Build configuration list for PBXNativeTarget "折线图UITests" */ = {
 			isa = XCConfigurationList;
@@ -517,6 +719,7 @@
 				16230E801D30D457003AA453 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
